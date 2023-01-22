@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "anapessoaecommerce",
+            "script": "yarn",
+            "args": "start"
+        }
+    ]
+}

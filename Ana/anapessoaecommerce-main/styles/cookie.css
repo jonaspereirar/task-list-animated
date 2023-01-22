@@ -1,0 +1,175 @@
+p {
+  margin: 0px;
+}
+.btn-cookies {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background: #1dbf72;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.1rem 2rem;
+}
+.msg-cookies {
+  color: #666666;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  grid-column: 1;
+  grid-row: 2/2;
+}
+.link-cookies {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: tomato;
+}
+.cookies-content {
+  position: fixed;
+  width: 100%;
+  bottom: 2rem;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background: white;
+  max-width: 620px;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(9rem);
+  animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+@media (max-width: 375px) {
+  .cookies-top {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+   }
+ 
+   .link-cookies {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+     color: tomato;
+     font-size: 0.8rem;
+     grid-column: 3;
+     grid-row: 3/3;
+   }
+   .cookies-content {
+     display: flex;
+     font-weight: bold;
+     padding: 0 1rem;
+ 
+     width: 22rem;
+     z-index: 1000;
+     height: 5rem;
+     background: white;
+ 
+     gap: 2rem;
+     opacity: 0;
+     transform: translateY(12rem);
+     animation: slideUp 1s forwards;
+     bottom: 1rem;
+ 
+   }
+ 
+   @keyframes slideUp {
+     to {
+       transform: initial;
+       opacity: initial;
+     }
+   }
+ 
+   .btn-cookies {
+     display: flex;
+     align-items: center;
+     border-radius: 1rem;
+     padding: 0.5rem 0.5rem;
+     color: white;
+     height: 4rem;
+    
+   }
+ 
+   .msg-cookies {
+     color: #666666;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+     grid-column: 1;
+     grid-row: 2/2;
+     font-size: 0.8rem;
+   }
+  }
+
+@media (max-width: 340px) {
+  .cookies-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .link-cookies {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: tomato;
+    font-size: 0.8rem;
+    grid-column: 3;
+    grid-row: 3/3;
+    padding-top: 0.2rem;
+  }
+  .cookies-content {
+    display: flex;
+    font-weight: bold;
+    padding: 0 1.5rem;
+
+    width: 20rem;
+    z-index: 1000;
+    height: 5rem;
+    background: white;
+
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateY(12rem);
+    animation: slideUp 1s forwards;
+    bottom: 1rem;
+    padding-top: 0.2rem;
+    justify-content: center;
+
+  }
+
+  @keyframes slideUp {
+    to {
+      transform: initial;
+      opacity: initial;
+    }
+  }
+
+  .btn-cookies {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.1rem 1rem;
+    color: white;
+    height: 2rem;
+   
+  }
+
+  .msg-cookies {
+    color: #666666;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    grid-column: 1;
+    grid-row: 2/2;
+    font-size: 0.8rem;
+  }
+}
